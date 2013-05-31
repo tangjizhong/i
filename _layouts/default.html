@@ -3,8 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
+		<style type="text/css">
+			*{
+				font-size: 12px;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+			.back{
+				margin-top: 25px;
+				text-align: right;
+			}
+		</style>
 	</head>
 	<body>
 		{{ content }}
+		<div class="back"><a href="javascript:void(0)" onclick="window.history.back()">返回</a></div>
 	</body>
 </html>

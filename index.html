@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 我的Blog
+title: 我的Blog - http://tangjizhong.github.io/i
 ---
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
@@ -10,3 +10,17 @@ title: 我的Blog
 	<li>{{ post.date | date_to_string} <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
+<p>
+	<pre>
+		$ mkdir i
+		$ cd i
+		$ git init
+		$ git checkout --orphan gh-pages
+		$ mkdir _layouts
+		$ mkdir _post
+		$ git add .
+		$ git commit -m "first post"
+		$ git remote add origin https://github.com/tangjizhong/i.git
+		$ git push origin gh-pages
+	</pre>
+</p>
