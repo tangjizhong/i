@@ -1,6 +1,6 @@
 ---
-layout: default
-title: 我的Blog - http://tangjizhong.github.io/i
+layout: index
+title: 我的Blog - http://tangjizhong.tk/i
 ---
 <h2>{{ page.title }}</h2>
 <p>最新文章</p>
@@ -9,6 +9,7 @@ title: 我的Blog - http://tangjizhong.github.io/i
 	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
+<!--
 <p>
 	<pre>
 		$ mkdir i
@@ -23,3 +24,4 @@ title: 我的Blog - http://tangjizhong.github.io/i
 		$ git push origin gh-pages
 	</pre>
 </p>
+-->
